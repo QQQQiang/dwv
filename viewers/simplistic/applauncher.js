@@ -15,6 +15,7 @@ function startApp() {
         "isMobile": true
     });
     dwv.gui.appendResetHtml(myapp);
+    myapp.loadURLs(["https://raw.githubusercontent.com/ivmartel/dwv/master/tests/data/bbmri-53323851.dcm"]);
 }
 
 // Image decoders (for web workers)

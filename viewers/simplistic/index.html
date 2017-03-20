@@ -9,14 +9,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <link type="text/css" rel="stylesheet" href="../../css/style.css" />
 <style type="text/css" >
-body { background: #252525; color: #fff; }
-button {
+html { background: #252525; color: #fff; }
+ button {
     margin: 5px; padding: 10px 10px;
     border: 0 none; border-radius: 4px;
     font-size: 14px; font-weight: 600;
     color: #fff; background-color: #444; }
-button:hover { background-color: #555; }
-button:disabled { background-color: #08b; }
+ button:hover { background-color: #555; }
+ button:disabled { background-color: #08b; }
 .toolbar { font: 14px arial, sans-serif; margin-bottom: 5px; text-align: center; }
 .wl-button, .reset-button { margin-right: 5px; }
 .layerContainer { margin: auto; text-align: center; }
@@ -106,13 +106,19 @@ button:disabled { background-color: #08b; }
 <div id="dwv">
 
 <!-- Toolbar -->
-<div class="toolbar"></div>
+<div class="toolbar">
+    <input type="file" id="file-upload" style="width: 150px;" webkitdirectory>
+    <button id="upload">上传文件夹</button>
+</div>
+
 <!-- Layer Container -->
 <div class="layerContainer">
-<canvas class="imageLayer">Only for HTML5 compatible browsers...</canvas>
+<canvas id="canvas" class="imageLayer">Only for HTML5 compatible browsers...</canvas>
 </div><!-- /layerContainer -->
 
 </div><!-- /dwv -->
 
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="./upload.js"></script>
 </body>
 </html>

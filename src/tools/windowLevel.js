@@ -36,6 +36,7 @@ dwv.tool.WindowLevel = function(app)
         // store initial position
         self.x0 = event._x;
         self.y0 = event._y;
+        console.log(event);
         // update GUI
         app.getViewController().setCurrentPosition2D(event._x, event._y);
     };

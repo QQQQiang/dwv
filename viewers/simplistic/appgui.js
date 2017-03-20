@@ -147,3 +147,4 @@ dwv.gui.appendResetHtml = function (app)
     var node = app.getElement("toolbar");
     node.appendChild(button);
 };
+

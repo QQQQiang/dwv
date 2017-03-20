@@ -181,7 +181,7 @@ dwv.DrawController = function (drawDiv)
                     var type = shape.className;
                     if (type === "Line") {
                         var shapeExtrakids = collec[i].getChildren( isNodeNameShapeExtra );
-                        if (shape.closed()) {
+                        if (shape.clolsed()) {
                             type = "Roi";
                         } else if (shapeExtrakids.length !== 0) {
                             if ( shapeExtrakids[0].name().indexOf("triangle") !== -1 ) {
